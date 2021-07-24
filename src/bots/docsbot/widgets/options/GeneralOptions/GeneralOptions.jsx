@@ -4,10 +4,11 @@ import Options from "../Options/Options";
 const GeneralOptions = (props) => {
   const options = [
     {
-      name: "SHOP ON EMI STORE",
-      handler: props.actionProvider.handleMessageParserDocs,
+      name: "SEARCH panel ...................",
+      handler: props.actionProvider.handleQuery,
       id: 1,
     },
+    
     {
       name: "LOANS",
       handler: props.actionProvider.handleConfigDocs,
@@ -35,6 +36,26 @@ const GeneralOptions = (props) => {
       handler: props.actionProvider.handleAI,
       id: 6,
     },
+
+    {
+      name: "Voice To Text : Command",
+      handler: props.actionProvider.handleVoicetoText,
+      id: 7,
+    },
+
+    {
+      name: "Search by Typing......",
+      handler: props.actionProvider.handleSearchPanel,
+      id: 8,
+    },
+
+    {
+      name: "SHOP ON EMI STORE",
+      handler: props.actionProvider.handleMessageParserDocs,
+      id: 9,
+    },
+
+    
   ];
 
   return <Options options={options} />;
