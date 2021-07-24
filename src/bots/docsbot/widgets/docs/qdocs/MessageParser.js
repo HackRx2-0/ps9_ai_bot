@@ -82,6 +82,10 @@ class MessageParser {
         this.actionProvider.handleJavascriptListnineteen();
         this.actionProvider.handleJavascriptListtwenty();
       }
+        
+        if (lowerCaseMessage.includes("anythingelse")) {
+        this.actionProvider.handleJavascriptListtwentyone();
+      }
 
 
 
